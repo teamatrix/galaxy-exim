@@ -15,3 +15,5 @@ buy shirt
 buy game
 milk
 milk
+Master Python
+Ferari
