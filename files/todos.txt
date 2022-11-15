@@ -1,19 +1,17 @@
 shop
-wash
-sleep
-wash
+showerwash
 clean
-milk
 honey
 soccer
 chess
-fork
+plate
 cup
-chair
+charriot
 buy a lens
 buy shirt
 buy game
 milk
-milk
 Master Python
 Ferari
+meatget money
+Last Resort
