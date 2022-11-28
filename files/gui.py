@@ -1,6 +1,12 @@
 import functions
 import PySimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
+
 
 sg.theme("Black")
 
@@ -18,7 +24,7 @@ window = sg.Window('My To-Do App',
                    layout=[[label], [clock],
                            [input_box, add_button],
                            [list_box, edit_button,
-                            complete_button],[exit_button]],
+                            complete_button], [exit_button]],
                    font=('Helvetica', 20))
 
 """ Commented code below will display the input screen on a command line below the label"""
@@ -31,7 +37,6 @@ while True:
     window["clock"].update(value=time.strftime("%b %d, %Y %H :%M:%S"))
     print(1, event)
     print(2, values)
-    print(3, values['todos'])
     match event:
         case "Add":
             todos = functions.get_todos()
