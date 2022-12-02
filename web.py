@@ -10,9 +10,12 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("My Todo App")
-st.subheader("This is My todo app")
-st.write("Developed by TeaMatriX.")
+# Lets you configure the page, useful for mobile apps
+# st.set_page_config(layout="wide)
+
+st.title("Galaxy Import Export Logistics LLC")
+st.subheader("Warehouse Manager")
+st.write("Tasks To Be Completed")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
